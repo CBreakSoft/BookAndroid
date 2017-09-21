@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="381dp"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/noteEdit_et_content"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:minLines="6" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingBottom="10sp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="确定"
+            android:layout_width="190sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/noteEdit_bt_sub"
+            android:onClick="noteEdit_bt_sub_Click"
+            />
+
+        <Button
+            android:gravity="center_horizontal"
+            android:text="删除"
+            android:layout_width="190sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/noteEdit_bt_del"
+            android:onClick="noteEdit_bt_del_Click"
+            />
+
+    </LinearLayout>
+</LinearLayout>

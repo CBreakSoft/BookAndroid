@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dingcheng365.book">
+
+    <application
+        android:name=".Data"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ClassnameaddActivity" />
+        <activity android:name=".ClassificationActivity" />
+        <activity android:name=".ClassnameEditActivity" />
+        <activity android:name=".BookAddActivity" />
+        <activity android:name=".BookDisplayActivity" />
+        <activity android:name=".BookEditActivity" />
+        <activity android:name=".BookDelActivity" />
+        <activity android:name=".NoteAddActivity" />
+        <activity android:name=".NoteDelActivity" />
+        <activity android:name=".NoteEditActivity" />
+        <activity android:name=".NoteAdd2Activity" />
+        <activity android:name=".NoteDisplayActivity" />
+        <activity android:name=".NoteShowActivity" />
+        <activity android:name=".SumUserActivity" />
+        <activity android:name=".SumBookActivity"></activity>
+    </application>
+
+</manifest>

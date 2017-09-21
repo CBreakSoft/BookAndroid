@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/classname_edit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dingcheng365.book.ClassnameEditActivity">
+
+    <TextView
+        android:text="分类名称"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        android:id="@+id/cn_edit_tv_classname"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/cn_edit_tv_classname"
+        android:layout_alignLeft="@+id/cn_edit_tv_classname"
+        android:layout_alignStart="@+id/cn_edit_tv_classname"
+        android:layout_marginTop="60dp"
+        android:id="@+id/cn_edit_et_classname" />
+
+    <Button
+        android:text="保存"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/cn_edit_et_classname"
+        android:layout_alignStart="@+id/cn_edit_et_classname"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="97dp"
+        android:onClick="cn_edit_bt_save_Click"
+        android:id="@+id/cn_edit_bt_save" />
+
+    <Button
+        android:text="删除"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cn_edit_bt_save"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:onClick="cn_edit_bt_del_Click"
+        android:id="@+id/cn_edit_bt_del" />
+</RelativeLayout>
